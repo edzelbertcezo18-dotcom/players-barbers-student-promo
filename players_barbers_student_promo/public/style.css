@@ -112,3 +112,11 @@ body::before{
 .location{line-height:1.4}
 
 .admin-page .checker-card{max-width:720px;margin:0 auto}.admin-label{display:block;font-weight:900;text-transform:uppercase;letter-spacing:.08em;margin:10px 0}.code-input{width:100%;box-sizing:border-box;padding:18px 16px;border:3px solid #fff;background:#080808;color:#fff;font-size:28px;font-weight:900;letter-spacing:.18em;text-align:center;text-transform:uppercase}.check-result{margin-top:18px;padding:20px;border:3px solid #fff;background:#111;font-size:18px;line-height:1.5}.check-result.good{border-color:#fff}.check-result.bad{border-color:#fff}.confirm-btn{margin-top:14px}.staff-note{margin-top:20px;padding:15px;border-left:5px solid #fff;background:rgba(0,0,0,.65);font-size:14px}.admin-page footer a{color:#fff;font-weight:800;text-decoration:none}
+.loyalty-card-image {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  margin: 15px auto;
+  border-radius: 8px;
+}
