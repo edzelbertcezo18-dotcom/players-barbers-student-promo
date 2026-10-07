@@ -12,7 +12,7 @@ const CONFIG = {
   business: 'PLAYERS BARBERS',
   location: '2nd floor, MAGIC MALL ANNEX URDANETA, PANGASINAN',
   facebook: 'https://www.facebook.com/p/Players-Barbers-Magic-Mall-Urdaneta-City-61589989845447/',
-  price: '₱200',
+  price: '₱150',
   reward: 'FREE HAIRCUT after completing the required stamps',
   stamps: 5,
   schools: [
