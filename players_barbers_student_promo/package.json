@@ -1,1 +1,12 @@
-
+{
+  "name": "players-barbers-student-promo",
+  "version": "1.0.0",
+  "description": "PLAYERS BARBERS Student Promo",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
