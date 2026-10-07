@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090909">
+<title>PLAYERS BARBERS — Student Promo</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<main class="page">
+  <section class="hero">
+    <img class="brand-logo" src="/players-barbers-logo.png" alt="PLAYERS BARBERS logo">
+    <p class="eyebrow">PLAYERS BARBERS • MAGIC MALL URDANETA CITY</p>
+    <h1>STUDENT<br><span>PROMO</span></h1>
+    <p class="sub">Long-term student privilege • Available year-round</p>
+    <p class="location"><strong>LOCATION:</strong> 2nd floor, MAGIC MALL ANNEX URDANETA, PANGASINAN</p>
+  </section>
+
+  <section class="price-card">
+    <div class="price">₱200</div>
+    <div><strong>STUDENT HAIRCUT PACKAGE</strong><p>More value. More reasons to come back.</p></div>
+  </section>
+
+  <section class="card">
+    <h2>WHAT'S INCLUDED</h2>
+    <div class="benefits">
+      <div class="benefit"><span>✂</span><div><b>Haircut</b><small>Student haircut for ₱200</small></div></div>
+      <div class="benefit"><span>🎁</span><div><b>Free Shampoo</b><small>Enjoy a complimentary shampoo with your student haircut</small></div></div>
+      <div class="benefit"><span>🪪</span><div><b>PLAYERS Loyalty Card</b><small>Keep your physical card and collect stamps on every qualifying visit</small></div></div>
+      <div class="benefit"><span>★</span><div><b>1 Loyalty Stamp</b><small>Get a stamp after your qualifying student promo visit</small></div></div>
+    </div>
+
+    <div class="reward">
+      <div class="reward-title">★ LOYALTY REWARD</div>
+      <div class="reward-big">5 STAMPS</div>
+      <p>Complete 5 qualifying stamps and get a <strong>FREE HAIRCUT</strong>.</p>
+      <small>Physical stamping only. Staff must verify each qualifying visit.</small>
+    </div>
+
+    <div class="how">
+      <h2>HOW IT WORKS</h2>
+      <div class="step"><b>1</b><p><strong>Bring your student ID.</strong><br>Show proof that you are currently enrolled in a participating school.</p></div>
+      <div class="step"><b>2</b><p><strong>Avail the ₱200 Student Promo.</strong><br>Get your haircut with a free shampoo.</p></div>
+      <div class="step"><b>3</b><p><strong>Get your loyalty card stamped.</strong><br>Keep the physical card and bring it on your next visit.</p></div>
+      <div class="step"><b>4</b><p><strong>Come back and collect stamps.</strong><br>Reach 5 stamps to claim your free haircut.</p></div>
+    </div>
+
+    <div class="schools">
+      <h2>SELECT YOUR SCHOOL <span class="required">*</span></h2>
+      <p class="muted">School selection is required before continuing with the student promo.</p>
+      <select id="schoolSelect" required aria-label="Select your school">
+        <option value="" selected disabled>Choose your school</option>
+        <option value="Urdaneta City University">Urdaneta City University</option>
+        <option value="Pangasinan State University">Pangasinan State University</option>
+        <option value="University of Eastern Pangasinan">University of Eastern Pangasinan</option>
+        <option value="University of Pangasinan">University of Pangasinan</option>
+        <option value="Lyceum-Northwestern University">Lyceum-Northwestern University</option>
+        <option value="Urdaneta City National High School">Urdaneta City National High School</option>
+        <option value="International Colleges for Excellence">International Colleges for Excellence</option>
+        <option value="Others">Others</option>
+      </select>
+      <p id="schoolError" class="school-error" hidden>Please select your school first.</p>
+    </div>
+
+    <div class="follow-card">
+      <h2>FOLLOW PLAYERS BARBERS FIRST</h2>
+      <p class="muted">Follow the PLAYERS BARBERS Facebook page first, then return here to get your promo code.</p>
+      <a id="fbBtn" class="button fb" target="_blank" rel="noopener">FOLLOW PLAYERS BARBERS ON FACEBOOK ↗</a>
+      <button id="codeBtn" class="button code-btn" type="button" disabled>I FOLLOWED THE PAGE — GET MY CODE</button>
+      <p id="followError" class="school-error" hidden>Please select your school first.</p>
+      <div id="codeBox" class="code-box" hidden>
+        <div class="code-label">YOUR PROMO CODE</div>
+        <div id="promoCode" class="promo-code">------</div>
+        <p>Show this code together with your student ID to PLAYERS BARBERS staff for confirmation.</p>
+      </div>
+    </div>
+
+    <div class="note"><strong>Important:</strong> Student ID verification is required. Follow the PLAYERS BARBERS Facebook page first. Your promo code must be confirmed by PLAYERS BARBERS staff. The loyalty card is physical and stamps are added by staff only.</div>
+  </section>
+
+  <footer>PLAYERS BARBERS • LONG-TERM STUDENT PROMO • SUBJECT TO SHOP TERMS</footer>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>

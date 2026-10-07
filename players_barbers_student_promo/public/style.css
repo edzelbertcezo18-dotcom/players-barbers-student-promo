@@ -1,0 +1,114 @@
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#f4f4f4;color:#090909}.page{width:min(100%,620px);margin:auto;padding:18px}.hero{text-align:center;padding:24px 10px 22px}.brand-logo{width:132px;height:132px;object-fit:contain;display:block;margin:0 auto 16px}.eyebrow{font-size:10px;letter-spacing:2px;color:#555;margin:0 0 13px;font-weight:800}.hero h1{font-size:48px;line-height:.92;margin:0;font-weight:900;letter-spacing:-2px}.hero h1 span{display:block}.sub{color:#555;font-size:14px;margin:15px 0 0;font-weight:700}.price-card{display:flex;align-items:center;gap:18px;background:#090909;color:#fff;border-radius:0;padding:20px;margin:0 0 15px;border:4px solid #090909;box-shadow:8px 8px 0 #fff}.price{font-size:43px;font-weight:900;line-height:1}.price-card strong{font-size:15px}.price-card p{margin:5px 0 0;color:#bbb;font-size:12px}.card{background:#fff;border:3px solid #090909;border-radius:0;padding:22px;box-shadow:8px 8px 0 #090909}.card h2{font-size:15px;letter-spacing:2px;margin:4px 0 17px;font-weight:900}.benefits{display:grid;gap:9px}.benefit{display:flex;gap:13px;align-items:center;background:#090909;border:2px solid #090909;border-radius:0;padding:14px;color:#fff}.benefit>span{width:36px;height:36px;border-radius:50%;background:#fff;color:#000;display:grid;place-items:center;font-size:18px}.benefit b{display:block;font-size:14px}.benefit small{display:block;color:#bbb;font-size:11px;margin-top:3px;line-height:1.35}.reward{margin:20px 0;background:#090909;color:#fff;border-radius:0;padding:20px;text-align:center;border:3px solid #090909}.reward-title{font-size:11px;letter-spacing:2px;font-weight:900}.reward-big{font-size:34px;font-weight:900;margin:7px 0}.reward p{font-size:13px;margin:0 0 8px}.reward small{color:#bbb;font-size:10px}.how{margin-top:26px}.step{display:flex;gap:12px;margin:13px 0}.step>b{flex:0 0 30px;height:30px;border-radius:50%;background:#090909;color:#fff;display:grid;place-items:center}.step p{margin:0;font-size:12px;color:#555;line-height:1.45}.step strong{color:#090909;font-size:13px}.schools{margin-top:26px;padding-top:22px;border-top:3px solid #090909}.muted{font-size:12px;line-height:1.5;color:#999}.schools ul{padding-left:20px;color:#ccc;font-size:12px;line-height:1.7}.button{display:block;width:100%;border-radius:12px;padding:15px 16px;font-weight:900;font-size:12px;cursor:pointer;text-align:center;text-decoration:none;margin-top:22px}.button.fb{background:#090909;color:#fff;border:2px solid #090909}.note{margin-top:15px;padding:12px;border:1px solid #2c2c2c;border-radius:12px;color:#999;font-size:10px;line-height:1.45}footer{text-align:center;color:#555;font-size:10px;padding:24px 5px 10px;line-height:1.5}@media(max-width:420px){.hero h1{font-size:41px}.card{padding:18px}.price{font-size:37px}}
+
+.required{color:#ff6b6b}.schools select{width:100%;background:#fff;color:#090909;border:2px solid #090909;border-radius:12px;padding:14px;font-size:12px;outline:none}.schools select:focus{border-color:#fff}.school-error{color:#ff7777;font-size:11px;margin:8px 0 0}.school-error[hidden]{display:none}
+
+.location {
+  margin: 10px auto 0;
+  max-width: 760px;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+
+.follow-card {margin-top:24px;padding:22px;border:3px solid #090909;border-radius:0;background:#f4f4f4}
+
+.follow-card h2 { margin-top: 0; }
+.follow-card .button { margin-top: 10px; }
+
+.code-btn {
+  width: 100%;
+  border: 0;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.code-btn:disabled {
+  cursor: not-allowed;
+  opacity: .45;
+}
+
+.code-box {margin-top:18px;padding:20px;text-align:center;border-radius:0;background:#fff;color:#111;border:3px solid #090909}
+
+.code-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.promo-code {
+  margin: 8px 0;
+  font-size: 34px;
+  font-weight: 900;
+  letter-spacing: 5px;
+}
+
+.code-box p {
+  margin-bottom: 0;
+  font-size: 13px;
+}
+
+.brand-logo{border-radius:50%;filter:contrast(1.05)}
+.code-btn{background:#090909;color:#fff;border:2px solid #090909}
+.code-btn:disabled{background:#777;color:#fff}
+@media(max-width:420px){.brand-logo{width:110px;height:110px}.hero h1{font-size:41px}}
+
+/* PLAYERS BARBERS black-background theme */
+html,body{background:#000;color:#fff}
+body{min-height:100vh}
+.page{background:#000}
+.hero{color:#fff}
+.eyebrow,.sub,.location{color:#fff}
+.hero h1{color:#fff}
+.price-card{background:#fff;color:#000;border-color:#fff;box-shadow:8px 8px 0 #000}
+.price-card p{color:#333}
+.card{background:#0a0a0a;color:#fff;border-color:#fff;box-shadow:8px 8px 0 #fff}
+.card h2{color:#fff}
+.benefit{background:#fff;color:#000;border-color:#fff}
+.benefit>span{background:#000;color:#fff}
+.benefit small{color:#444}
+.reward{background:#fff;color:#000;border-color:#fff}
+.reward small{color:#444}
+.step>b{background:#fff;color:#000}
+.step p{color:#bbb}
+.step strong{color:#fff}
+.schools{border-top-color:#fff}
+.muted{color:#aaa}
+.schools select{background:#000;color:#fff;border-color:#fff}
+.schools select option{background:#000;color:#fff}
+.follow-card{background:#000;color:#fff;border-color:#fff}
+.follow-card h2{color:#fff}
+.button.fb,.code-btn{background:#fff;color:#000;border-color:#fff}
+.code-btn:disabled{background:#444;color:#aaa;border-color:#444}
+.code-box{background:#fff;color:#000;border-color:#fff}
+.note{border-color:#555;color:#bbb}
+footer{color:#aaa}
+
+/* PLAYERS BARBERS checkerboard/grunge background */
+body{
+  background:#000 url('/players-barbers-background.png') center top / cover fixed no-repeat;
+  position:relative;
+}
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.38);
+  pointer-events:none;
+  z-index:0;
+}
+.page{position:relative;z-index:1;background:transparent}
+.hero{
+  background:rgba(0,0,0,.78);
+  border:3px solid #fff;
+  padding:26px 16px 24px;
+  box-shadow:8px 8px 0 #fff;
+  margin-bottom:18px;
+}
+.price-card,.card{backdrop-filter:blur(2px)}
+.price-card{box-shadow:8px 8px 0 #fff}
+.card{background:rgba(0,0,0,.94)}
+.follow-card{background:rgba(0,0,0,.92)}
+.location{line-height:1.4}
+
+.admin-page .checker-card{max-width:720px;margin:0 auto}.admin-label{display:block;font-weight:900;text-transform:uppercase;letter-spacing:.08em;margin:10px 0}.code-input{width:100%;box-sizing:border-box;padding:18px 16px;border:3px solid #fff;background:#080808;color:#fff;font-size:28px;font-weight:900;letter-spacing:.18em;text-align:center;text-transform:uppercase}.check-result{margin-top:18px;padding:20px;border:3px solid #fff;background:#111;font-size:18px;line-height:1.5}.check-result.good{border-color:#fff}.check-result.bad{border-color:#fff}.confirm-btn{margin-top:14px}.staff-note{margin-top:20px;padding:15px;border-left:5px solid #fff;background:rgba(0,0,0,.65);font-size:14px}.admin-page footer a{color:#fff;font-weight:800;text-decoration:none}
