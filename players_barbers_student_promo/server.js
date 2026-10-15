@@ -14,7 +14,7 @@ const CONFIG = {
   facebook: 'https://www.facebook.com/p/Players-Barbers-Magic-Mall-Urdaneta-City-61589989845447/',
   price: '₱150',
   reward: 'FREE HAIRCUT after completing the required stamps',
-  stamps: 10,
+  stamps: 5,
   schools: [
     'Urdaneta City University',
     'Pangasinan State University',
@@ -70,31 +70,6 @@ function serve(req, res, pathname) {
 http.createServer(async (req,res) => {
   const u = new URL(req.url, `http://${req.headers.host}`);
   if (req.method === 'GET' && u.pathname === '/api/config') return json(res,200,CONFIG);
-
-  if (req.method === 'GET' && u.pathname === '/api/stats') {
-    const codes = loadCodes();
-    const used = codes.filter(x => x.status === 'used');
-    const unused = codes.filter(x => x.status !== 'used');
-    const bySchool = {};
-    for (const school of CONFIG.schools) bySchool[school] = { claimed: 0, redeemed: 0, unused: 0 };
-    for (const record of codes) {
-      const school = record.school || 'Unknown';
-      if (!bySchool[school]) bySchool[school] = { claimed: 0, redeemed: 0, unused: 0 };
-      bySchool[school].claimed += 1;
-      if (record.status === 'used') bySchool[school].redeemed += 1;
-      else bySchool[school].unused += 1;
-    }
-    const history = [...codes].sort((a,b) => {
-      const da = a.usedAt || a.createdAt || '';
-      const db = b.usedAt || b.createdAt || '';
-      return db.localeCompare(da);
-    });
-    return json(res, 200, {
-      totals: { claimed: codes.length, redeemed: used.length, unused: unused.length, schools: Object.keys(bySchool).filter(s => bySchool[s].claimed > 0).length },
-      bySchool: Object.entries(bySchool).map(([school, counts]) => ({ school, ...counts })).sort((a,b) => b.redeemed-a.redeemed || b.claimed-a.claimed || a.school.localeCompare(b.school)),
-      history
-    });
-  }
 
   if (req.method === 'POST' && u.pathname === '/api/generate-code') {
     try {
